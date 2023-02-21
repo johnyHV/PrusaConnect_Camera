@@ -1,8 +1,8 @@
 # PrusaConnect_Camera
 
-The script uses an interface to create a camera from an Android/IOS device. A WEB page is launched on the Android/IOS device, which then sending photos from the camera to the prusaconnect backend.
+For Web cameras in the PrusaConnect is launched a WEB page on the Android/IOS/laptop device, which then sending photos from the camera to the prusaconnect backend.
 
-This script uses the same WEB interface. The script is adapted to work in raspberry-pi. For the correct functionality of the camera, it is necessary to obtain a fingerprint and token ID. These variables are only known after creating the camera in the prusaConnect WEB interface. The script uses RPI CSI camera for photo source. So, we need enable CSI camera and connect CSI camera to RPI
+This script uses the same WEB interface for sending picture from RPI. For the correct functionality of the camera, it is necessary to obtain a fingerprint and token ID. These variables are only known after creating the WEB camera in the prusaConnect WEB interface. The script uses RPI CSI camera for photo source. So, we need enable CSI camera and connect CSI camera to RPI
 
 # How to enable CSI camera in the linux
 1. Type "sudo raspi-config" in the terminal.
@@ -43,10 +43,11 @@ sudo chmod +x install.sh
 ./install.sh
 ```
 
-**Step 8.** Now we can start script **PrusaConnectCam.sh**. The script takes a photo every 10 seconds using raspistill, and then sends it to the backend of the prusa connect website
+**Step 8.** Now we can start script **PrusaConnectCam.sh**. The script takes a photo every 10 seconds using raspistill, and then sends it to the backend of the prusa connect website. Taking a picture and uploading the picture to the backend may take a few seconds.
 ```
-PrusaConnectCam.sh
+./PrusaConnectCam.sh
 ```
+
 # Changelog
 - 21.2.2023 - Init repository
 
