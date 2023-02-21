@@ -1,3 +1,8 @@
+// -------------------------------
+// Script version 1.0
+// miroslav.pivovarsky@gmail.com
+// -------------------------------
+
 // base64 -w 0 prusa.jpg  > image.txt
 // npm install buffer xhr2 fs whatwg-fetch
 

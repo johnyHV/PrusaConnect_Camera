@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# -------------------------------
+# Script version 1.0
+# miroslav.pivovarsky@gmail.com
+# -------------------------------
+
 while :
 do
 	raspistill  -w 1012 -h 760 --quality 50 -o second_image.jpg
